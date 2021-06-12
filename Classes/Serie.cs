@@ -30,5 +30,14 @@ namespace CadastroSeries.Classes
 
             return retorno;
         }
+
+        public string retornaTitulo()
+        {
+            return Titulo;
+        }
+        public int retornaId()
+        {
+            return Id;
+        }
     }
 }
