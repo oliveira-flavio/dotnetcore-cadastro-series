@@ -46,5 +46,9 @@ namespace CadastroSeries.Classes
         {
             Excluido = true;
         }
+        public bool retornarExcluido()
+        {
+            return Excluido;
+        }
     }
 }

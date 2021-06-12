@@ -52,7 +52,9 @@ namespace CadastroSeries
             }
             foreach (var serie in lista)
             {
-                Console.WriteLine($"ID Série: {serie.retornaId()} - Nome: {serie.retornaTitulo()}");
+                var excluido = serie.retornarExcluido();
+                var confirmacaoExcluido = excluido ? "Excluido" : "";
+                Console.WriteLine(@$"ID: {serie.retornaId()} - Nome: {serie.retornaTitulo()} - {confirmacaoExcluido}");
             }
         }
         private static void InserirSerie()
