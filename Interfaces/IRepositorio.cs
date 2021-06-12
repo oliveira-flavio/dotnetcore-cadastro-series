@@ -7,10 +7,10 @@ namespace CadastroSeries.Interfaces
     interface IRepositorio<T>
     {
         List<T> Lista();
-        T RetornaPorId(int Id);
+        T RetornaPorId(int id);
         void Insere(T entidade);
-        void Exclui(int Id);
-        void Atualiza(int Id, T entidade);
+        void Exclui(int id);
+        void Atualiza(int id, T entidade);
         int ProximoId();
     }
 }

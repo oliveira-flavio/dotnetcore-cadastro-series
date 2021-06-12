@@ -10,6 +10,7 @@ namespace CadastroSeries.Classes
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public int Ano { get; set; }
+        public bool Excluido { get; set; }
 
         public Serie(int id, Genero genero, string titulo, string descricao, int ano)
         {
@@ -18,6 +19,7 @@ namespace CadastroSeries.Classes
             Titulo = titulo;
             Descricao = descricao;
             Ano = ano;
+            Excluido = false;
         }
 
         public override string ToString()
@@ -38,6 +40,10 @@ namespace CadastroSeries.Classes
         public int retornaId()
         {
             return Id;
+        }
+        public void Excluir()
+        {
+            Excluido = true;
         }
     }
 }
