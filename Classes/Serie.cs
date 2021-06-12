@@ -29,6 +29,7 @@ namespace CadastroSeries.Classes
             retorno += "Titulo: " + Titulo + Environment.NewLine;
             retorno += "Descrição: " + Descricao + Environment.NewLine;
             retorno += "Ano de início: " + Ano + Environment.NewLine;
+            retorno += "Excluído: " + Excluido;
 
             return retorno;
         }
