@@ -9,7 +9,7 @@ namespace CadastroSeries
         static void Main(string[] args)
         {
             string opcaoUsuario = ObterOpcaoUsuario();
-            while (opcaoUsuario.ToUpper() != "x")
+            while (opcaoUsuario.ToUpper() != "X")
             {
                 switch (opcaoUsuario)
                 {
@@ -34,10 +34,12 @@ namespace CadastroSeries
 
                     default:
                         throw new ArgumentOutOfRangeException();
-
                 }
                 opcaoUsuario = ObterOpcaoUsuario();
             }
+
+            Console.WriteLine("Obrigado por utilizar o programa");
+            Console.ReadLine();
         }
         private static void ListarSeries()
         {
